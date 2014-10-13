@@ -1,0 +1,21 @@
+.big {
+  padding: 20px;
+  background-color: #000;
+}
+h1, h2, h3, h4, h5, h6, li, p {
+  font-family: 'Raleway', sans-serif;
+}
+.headline{
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+}
+
+.journalist{
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+.tagline{
+  margin-top: -20px;
+  position: relative;
+}
