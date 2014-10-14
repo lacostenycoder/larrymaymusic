@@ -19,3 +19,12 @@ h1, h2, h3, h4, h5, h6, li, p {
   margin-top: -20px;
   position: relative;
 }
+
+
+#soundcloud {
+  background-color: #000;
+}
+
+.top-buffer-10 { margin-top:10px; }
+.top-buffer-20 { margin-top:20px; }
+.top-buffer-40 { margin-top:40px; }
