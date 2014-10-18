@@ -24,6 +24,9 @@ h1, h2, h3, h4, h5, h6, li, p {
   position: relative;
 }
 
+.head-pic {
+  border: 8px solid grey;
+}
 
 #soundcloud {
   background-color: #000;
@@ -41,7 +44,7 @@ h1, h2, h3, h4, h5, h6, li, p {
   margin: 30px;
 }
 
-ul {
+/*ul {
     padding:0 0 0 0;
     margin:0 0 0 0;
 }
@@ -51,8 +54,28 @@ ul li {
 }
 ul li img {
   cursor: pointer;
-}
+}*/
 .gallery img{
   max-width: 100px;
   max-height: 100px;
+}
+.controls{
+  width:50px;
+  display:block;
+  font-size:12px;
+  padding-top:8px;
+  font-weight:bold;
+}
+.next {
+  float:right;
+  text-align:right;
+}
+.previous {
+  float:left;
+  text-align:left;
+  margin-top: -40px;
+}
+
+.gallery-popup{
+  padding: 8px;
 }
