@@ -8,9 +8,9 @@ $(document).ready(function(){
   var html = '';
   html += img;
   // html += '<div style="height:25px;">';
-  html += '<a class="controls next btn btn-default clear-left" href="'+ (index+2) + '">next</a>';
-  html += '<button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>';
-  html += '<a class="controls previous btn btn-default left-block" href="' + (index) + '">prev</a>';
+  html += '<a class="controls next btn btn-default clear-left" href="'+ (index+2) + '"> <i class="glyphicon glyphicon-chevron-right"></i> </a>';
+  html += '<button type="button" class="btn btn-default center-block" data-dismiss="modal">  <i class="glyphicon glyphicon-remove"></i> </button>';
+  html += '<a class="controls previous btn btn-default left-block" href="' + (index) + '"> <i class="glyphicon glyphicon-chevron-left"></i> </a>';
   html += '</div>';
   //End of new code
 
