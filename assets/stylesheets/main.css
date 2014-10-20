@@ -32,6 +32,11 @@ h1, h2, h3, h4, h5, h6, li, p {
   border: 8px solid grey;
 }
 
+.bio-pic {
+  margin-top: 80px;
+  border: 8px solid grey;
+}
+
 #soundcloud {
   background-color: #000;
 }
@@ -115,3 +120,5 @@ ul li img {
 .big-type{
   font-size: 22px;
 }
+
+.med-type{ font-size: 20px;}
