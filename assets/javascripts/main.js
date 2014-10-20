@@ -24,6 +24,7 @@ $(document).ready(function(){
     $('#myModal .modal-body').html('');
   });
  });
+
 })
 
 $(document).on('click', 'a.controls', function(){
@@ -56,4 +57,12 @@ $(document).on('click', 'a.controls', function(){
   }
 
    return false;
+});
+
+// add navbar active behavior
+
+$(document).on('click', '.smoothScroll', function(e){
+  $("#navbar>li.active").removeClass("active");
+  $(this).parent().addClass('active');
+  return false;
 });

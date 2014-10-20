@@ -1,29 +1,35 @@
-$('#sendEmail').click(function() {
-  $.ajax({
-    type: “POST”,
-    url: “https://mandrillapp.com/api/1.0/messages/send.json”,
-    data: {
-      ‘key’: ‘vxg_k3DyFC46DMI2PhHQqA’,
-      ‘message’: {
-        ‘from_email’: ‘YOUR@EMAIL.HERE’,
-        ‘to’: [
-            {
-              ‘email’: ‘RECIPIENT_NO_1@EMAIL.HERE’,
-              ‘name’: ‘RECIPIENT NAME (OPTIONAL)’,
-              ‘type’: ‘to’
-            },
-            {
-              ‘email’: ‘RECIPIENT_NO_2@EMAIL.HERE’,
-              ‘name’: ‘ANOTHER RECIPIENT NAME (OPTIONAL)’,
-              ‘type’: ‘to’
-            }
-          ],
-        ‘autotext’: ‘true’,
-        ‘subject’: ‘YOUR SUBJECT HERE!’,
-        ‘html’: ‘YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!’
+$(document).ready(function(){
+  $('#sendEmail').click(function(e) {
+    var data = $("form").serializeArray();
+    var email = data[0].value;
+    var message = data[1].value;
+    var response = "You're email has been sent... we think.";
+    $.ajax({
+      url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+      type: 'POST',
+      data: {
+        'key': 'vxg_k3DyFC46DMI2PhHQqA',
+        'message': {
+          'from_email': email,
+          'to': [
+              {
+                'email': 'larrymayday@gmail.com',
+                'name': 'Larry May',
+                'type': 'to'
+              },
+              {
+                'email': 'djlancejordan@gmail.com',
+                'name': 'ANOTHER RECIPIENT NAME (OPTIONAL)',
+                'type': 'to'
+              }
+            ],
+          'autotext': 'true',
+          'subject': 'from LarryMayMusic.com',
+          'html': message
+        }
       }
-    }
-   }).done(function(response) {
-     console.log(response); // if you're into that sorta thing
-   });
+     }).done(function(response) {
+       alert(response); // if you're into that sorta thing
+     });
+  });
 });

@@ -13,11 +13,12 @@
     <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/javascripts/main.js"></script>
     <script type="text/javascript" src="assets/javascripts/smoothscroll.js"></script>
+    <script type="text/javascript" src="assets/javascripts/mandrill.js"></script>
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
   </head>
   <body>
 <!-- Begin Navbar section -->
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -27,13 +28,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#top">Larry May Music</a>
+      <a class="navbar-brand smoothScroll" href="#top">Larry May Music</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">About</a></li>
+      <ul class="nav navbar-nav" id="navbar">
+        <li class="active"><a href="#top" class="smoothScroll">About</a></li>
         <li><a href="#music" class="smoothScroll">Music</a></li>
         <li><a href="#photos" class="smoothScroll">Photos</a></li>
         <li><a href="#contact" class="smoothScroll">Contact</a></li>
@@ -43,7 +44,8 @@
   </div><!-- /.container-fluid -->
 </nav>
 <!-- end navbar -->
-<section id="top">
+<div class="spacer30" id="top"></div>
+<section>
   <div class="container big">
     <div class="col-xs-12 col-md-8">
       <h1>Larry May</h1>
@@ -80,16 +82,17 @@
 <div class="spacer30"></div>
 <section id="music">
   <div class="container big">
-  <div class ="col-xs-12">
-    <div class="text-left"><h1>Music</h1>
-      <div class="spacer30"></div>
-        <iframe class="center-block" width="90%" height="106" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/103711713&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-      <div class="top-buffer-10"></div>
-        <iframe class="center-block" width="90%" height="106" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/166365882&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-      <div class="top-buffer-10"></div>
-        <iframe class="center-block" width="90%" height="106" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/36604525&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-      <div class="top-buffer-10"></div>
-      <div class="spacer30"></div>
+    <div class ="col-xs-12">
+      <div class="text-left"><h1>Music</h1>
+        <div class="spacer30"></div>
+          <iframe class="center-block" width="90%" height="106" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/103711713&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        <div class="top-buffer-10"></div>
+          <iframe class="center-block" width="90%" height="106" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/166365882&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        <div class="top-buffer-10"></div>
+          <iframe class="center-block" width="90%" height="106" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/36604525&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        <div class="top-buffer-10"></div>
+        <div class="spacer30"></div>
+      </div>
     </div>
   </div>
 </section>
@@ -100,65 +103,67 @@
 <section id="photos">
   <div class="container big">
     <div clas="col-xs-12">
-      <div class="text-left"><h1>Photos</h1>
-
-        <div class="spacer30"></div>
-        <div class="gallery-list">
-          <ul class="row">
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-5 img-responsive gallery"><img src="assets/images/strummer.jpg"/></li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-5 img-responsive gallery"><img src="assets/images/donhill.jpg"/></li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-5 img-responsive gallery"><img src="assets/images/walker.jpg"/></li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-5 img-responsive gallery"><img src="assets/images/rocker.jpg"/></li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-5 img-responsive gallery"><img src="assets/images/bitterend.jpg"/></li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-5 img-responsive gallery"><img src="assets/images/foostrum.jpg"/></li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-5 img-responsive gallery"><img src="assets/images/shades.jpg"/></li>
-            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-5 img-responsive gallery"><img src="assets/images/bandviper.jpg"/></li>
-          </ul>
-        </div>
-
+      <h1>Photos</h1>
+      <div class="spacer30"></div>
+      <div class="gallery-list">
+        <ul class="row">
+          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-5 img-responsive gallery"><img src="assets/images/strummer.jpg"/></li>
+          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-5 img-responsive gallery"><img src="assets/images/donhill.jpg"/></li>
+          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-5 img-responsive gallery"><img src="assets/images/walker.jpg"/></li>
+          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-5 img-responsive gallery"><img src="assets/images/rocker.jpg"/></li>
+          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-5 img-responsive gallery"><img src="assets/images/bitterend.jpg"/></li>
+          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-5 img-responsive gallery"><img src="assets/images/foostrum.jpg"/></li>
+          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-5 img-responsive gallery"><img src="assets/images/shades.jpg"/></li>
+          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-5 img-responsive gallery"><img src="assets/images/bandviper.jpg"/></li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 <!-- photo modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-          </div>
-          <!-- <div class="modal-footer">
-          </div> -->
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body"></div>
+      <!-- <div class="modal-footer">
+      </div> -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <!-- End Photo Section -->
 <!-- Begin Contact Section -->
+<div class="spacer30"></div>
 <section id="contact">
-  <div class="container big">
+  <div class="container big ">
     <div clas="col-xs-12">
       <div class="text-left"><h1>Contact</h1></div>
-        <form role="form">
-          <div class="form-group">
-              <label for="inputEmail">Email</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <label for=”message”>Message</label>
-          </div>
-          <div class="form-group input-large">
-            <textarea class="form-control" id="message" rows="4" placeHolder="Type Message"></textarea>
-          </div>
-          <div class="form-group">
-            <button type="submit" class="btn btn-primary">Send</button>
-          </div>
+      <form role="form">
+        <div class="form-group">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control big-type" id="inputEmail" placeholder="Email" name="email">
         </div>
-        </form>
-      </div>
+        <div class="form-group input-large">
+          <label for="message">Message</label>
+          <textarea class="form-control big-type" id="message" rows="4" placeHolder="Type Message" name="message"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary" id="sendEmail">Send</button>
+        </div>
+      </form>
     </div>
-
+  </div>
 </section>
 <!-- End Contact Section -->
 <!-- Begin Social Section -->
 <section id="social">
+  <div class="container big">
+    <div class="col-xs-12">
+      <a class="btn btn-social-icon btn-twitter">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </div>
+
+  </div>
 </section>
 <!-- End Social Section -->
     </body>

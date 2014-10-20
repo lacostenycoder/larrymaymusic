@@ -1,7 +1,7 @@
 /**
  * SmoothScroll
- * This helper script created by DWUser.com.  Copyright 2012 DWUser.com.  
- * Dual-licensed under the GPL and MIT licenses.  
+ * This helper script created by DWUser.com.  Copyright 2012 DWUser.com.
+ * Dual-licensed under the GPL and MIT licenses.
  * All individual scripts remain property of their copyrighters.
  * Date: 10-Sep-2012
  * Version: 1.0.1
