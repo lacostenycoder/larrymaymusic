@@ -1,8 +1,9 @@
 $(document).ready(function(){
   $('#sendEmail').click(function(e) {
     var data = $("form").serializeArray();
-    var email = data[0].value;
-    var message = data[1].value;
+    var name = data[0].value;
+    var email = data[1].value;
+    var message = data[2].value;
     var response = "You're email has been sent... we think.";
     $.ajax({
       url: 'https://mandrillapp.com/api/1.0/messages/send.json',
@@ -10,6 +11,7 @@ $(document).ready(function(){
       data: {
         'key': 'vxg_k3DyFC46DMI2PhHQqA',
         'message': {
+          'from_name': name,
           'from_email': email,
           'to': [
               {

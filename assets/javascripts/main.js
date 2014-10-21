@@ -1,4 +1,10 @@
 $(document).ready(function(){
+  $('.navbar-collapse a').on('click',function (e) {
+    if($('.navbar-toggle').css('display') == 'block' && !$(this).siblings().length){
+      $('.navbar-collapse').collapse('toggle');
+    }
+  });
+
  $('li img').on('click',function(){
   var src = $(this).attr('src');
   var img = '<img src="' + src + '" class="img-responsive center-block gallery-popup"/>';
