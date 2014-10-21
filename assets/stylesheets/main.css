@@ -64,24 +64,47 @@ ul li {
 ul li img {
   cursor: pointer;
 }*/
+
+
+.credits li {
+  align-self: center
+  list-style:none;
+  font-size: 18px;
+  display: inline-block;
+  float: left;
+  margin: 0;
+  width: 50%;
+  padding: 10px;
+}
 .gallery img{
   /*min-width: 100px;
   min-width: 100px;*/
+  overflow: none;
+  list-style-position: inside;
   max-width: 160px;
   max-height: 160px;
-  padding: 40px;
+  height: auto !important;
+  /*padding: 40px;*/
 }
 
 .gallery-list {
   /*max-width: 800px;*/
   background-color: #222;
-  padding-right: 30px;
+  /*padding-right: 30px;*/
   /*padding-bottom: 30px;*/
 }
-/*.galer-list ui li {
-  padding: 20px;
-  min-width: 800px:
-}*/
+
+#thumbs li {
+  display: inline-block;
+  /*float: left;*/
+  overflow: none;
+  margin: 0;
+  /*width: 25%;
+  height: 25%;*/
+  list-style-position: inside;
+  /*padding: 10px;*/
+}
+
 .controls{
   width:50px;
   display:block;
