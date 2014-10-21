@@ -225,8 +225,10 @@ ul li img {
     }
 
     .no-zoom {
-      font-size: 16px;
+      font-size: 12px!important;
     }
+
+    input:focus { font-size: 12px!important}
 
   }
 
