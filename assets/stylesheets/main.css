@@ -224,7 +224,7 @@ ul li img {
       padding: 10px;
     }
 
-    /*.no-zoom {
+    .no-zoom {
       font-size: 12px !important;
     }
 
@@ -234,7 +234,7 @@ ul li img {
     input[type='number'],
     textarea {
       font-size: 12px !important;
-    }*/
+    }
 
   }
 

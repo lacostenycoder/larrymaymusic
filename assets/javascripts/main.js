@@ -1,15 +1,4 @@
 $(document).ready(function(){
-
-var zoomEnable;
-
-zoomEnable = function() {
-  $("head meta[name=viewport]").prop("content", "width=device-width, initial-scale=1.0, user-scalable=yes");
-};
-
-$("input[type='text']").on("touchstart", function(e) {
-  $("head meta[name=viewport]").prop("content", "width=device-width, initial-scale=1.0, user-scalable=no");
-});
-
 $("input[type='text']").blur(zoomEnable);
   $('.navbar-collapse a').on('click',function (e) {
     if($('.navbar-toggle').css('display') == 'block' && !$(this).siblings().length){
