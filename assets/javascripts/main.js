@@ -31,6 +31,18 @@ $(document).ready(function(){
   });
  });
 
+  //fix chrome zoom text issue
+  if ((navigator.userAgent.match(/Android/i)) && (navigator.userAgent.toLowerCase().indexOf('chrome') > -1)) {
+   isAndroidChrome = true;
+   var viewportmeta = document.querySelector('meta[name="viewport"]');
+   $(document).on('onFocus', '.no-zoom', function(){
+     viewportmeta.content = 'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1';
+   });
+   $(document).on('onBlur', '.no-zoom', function(){
+     viewportmeta.content = 'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.4';
+   });
+  }
+
 })
 
 $(document).on('click', 'a.controls', function(){
