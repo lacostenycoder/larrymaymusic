@@ -36,10 +36,10 @@ $(document).ready(function(){
    isAndroidChrome = true;
    var viewportmeta = document.querySelector('meta[name="viewport"]');
    $(document).on('onFocus', '.no-zoom', function(){
-     viewportmeta.content = 'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=.9';
+     viewportmeta.content = 'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.4';
    });
    $(document).on('onBlur', '.no-zoom', function(){
-     viewportmeta.content = 'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=.9';
+     viewportmeta.content = 'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.4';
    });
   }
 
