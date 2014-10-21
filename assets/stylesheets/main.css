@@ -39,12 +39,13 @@ h1, h2, h3, h4, h5, h6, li, p {
 }
 .headline{
   font-family: 'Raleway', sans-serif;
-  font-size: 24px;
+  /*font-size: 24px;*/
+  font-size: 160%;
 }
 
 .journalist{
   font-family: 'Raleway', sans-serif;
-  font-size: 18px;
+  font-size:60%;
 }
 
 .tagline{
@@ -63,7 +64,7 @@ h1, h2, h3, h4, h5, h6, li, p {
 }
 
 .bio-type{
-  font-size: 16px;
+  font-size: 110%;
   /*font-size: 3.2vw;*/
 }
 
@@ -99,7 +100,7 @@ ul li img {
 .credits li {
   /*align-self: center;*/
   list-style:none;
-  font-size: 18px;
+  font-size: 95%;
   display: inline-block;
   float: left;
   margin: 0;
@@ -121,8 +122,8 @@ ul li img {
 .gallery img{
   overflow: none;
   list-style-position: inside;
-  max-width: 140px;
-  max-height: 140px;
+  max-width: 80px;
+  max-height: 80px;
   height: auto !important;
   padding: 10px;
 }
@@ -186,10 +187,10 @@ ul li img {
 }
 
 .big-type{
-  font-size: 22px;
+  font-size: 140%;
 }
 
-.med-type{ font-size: 20px;}
+.med-type{ font-size: 110%;}
 
 .social-icon {
   -webkit-filter: grayscale(100%);
