@@ -4,7 +4,6 @@ $(document).ready(function(){
     var name = data[0].value;
     var email = data[1].value;
     var message = data[2].value;
-    var response = "You're email has been sent... we think.";
     $.ajax({
       url: 'https://mandrillapp.com/api/1.0/messages/send.json',
       type: 'POST',
@@ -21,17 +20,22 @@ $(document).ready(function(){
               },
               {
                 'email': 'djlancejordan@gmail.com',
-                'name': 'ANOTHER RECIPIENT NAME (OPTIONAL)',
+                'name': 'Webmaster)',
                 'type': 'to'
               }
             ],
           'autotext': 'true',
-          'subject': 'from LarryMayMusic.com',
+          'subject': 'message from LarryMayMusic.com',
           'html': message
         }
       }
      }).done(function(response) {
-       alert(response); // if you're into that sorta thing
+       if (response[0].reject_reason) {
+         alert("Email error, please enter a valid email address.");
+       } else {
+         alert("You're email has been sent!");
+         window.scrollTo(0, top);
+       }
      });
   });
 });
