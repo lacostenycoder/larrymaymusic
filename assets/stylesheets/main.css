@@ -224,6 +224,12 @@ ul li img {
       padding: 10px;
     }
 
+    select:focus,
+    textarea:focus,
+    input:focus {
+      font-size: 16px;
+      background: #eee;
+    }
 
   }
 
@@ -237,11 +243,11 @@ a img.social-icon:hover {
   -webkit-filter: brightness(.8);
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {
   select:focus,
   textarea:focus,
   input:focus {
     font-size: 16px;
     background: #eee;
   }
-}
+}*/
