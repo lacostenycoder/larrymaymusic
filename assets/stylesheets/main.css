@@ -225,10 +225,16 @@ ul li img {
     }
 
     .no-zoom {
-      font-size: 12px!important;
+      font-size: 12px !important;
     }
 
-    input:focus { font-size: 12px!important}
+    input:focus, textarea:focus { font-size: 12px !important}
+
+    input[type='text'],
+    input[type='number'],
+    textarea {
+      font-size: 12px !important;
+    }
 
   }
 
