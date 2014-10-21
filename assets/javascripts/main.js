@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $.mobile.zoom.disable();
   $('.navbar-collapse a').on('click',function (e) {
     if($('.navbar-toggle').css('display') == 'block' && !$(this).siblings().length){
       $('.navbar-collapse').collapse('toggle');
