@@ -42,7 +42,7 @@ $(document).ready(function(){
      viewportmeta.content = 'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.0';
    });
   }
-
+  $('a').smoothScroll();
 })
 
 $(document).on('click', 'a.controls', function(){
